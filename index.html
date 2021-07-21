@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Realtime Drawing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div style="display: flex; flex-flow: column; justify-content: center;" class="custom-div">
+        <h3 class="btn btn-info heading">Extra Filter Web App</h3>
+        <button style="margin-top: 20px; width: 10%;" class="snapshot btn btn-success" onclick="take_snapshot()">Take snapshot</button>
+    </div>
+
+    <div class="custom-buttons">
+        <button onclick="obj='cap'; gotPoses()" class="btn btn-primary">Cap</button>
+        <button onclick="obj='pagdi'; gotPoses()" class="btn btn-primary">Pagdi</button>
+        <button onclick="obj='goggles'; gotPoses()" class="btn btn-primary">Goggles</button>
+        <button onclick="obj='bindi'; gotPoses()" class="btn btn-primary">Bindi</button>
+        <button onclick="obj='earing'; gotPoses()" class="btn btn-primary">Earings</button>
+        <button onclick="obj='necklace'; gotPoses()" class="btn btn-primary">Necklace</button>
+        <button onclick="obj='bird'; gotPoses()" class="btn btn-primary">Bird on shoulder</button>
+    </div>
+        
+
+    <div class="custom-img">
+        <img src="monitor.png" alt="">
+    </div>
+
+    <div class="copy_right_footer">
+        Developed by - Manit Singhal
+    </div>
+
+    <script src="man.js"></script>
+
+</body>
+</html>
